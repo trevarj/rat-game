@@ -10,7 +10,6 @@
   (let* ((dir (directional 'move))
          (speed 20.0)
          (x (vx dir))
-         (y (vy dir))
          (last-dir (movement rat))
          (next-dir (cond
                      ((< x 0) 'walk-left)
@@ -20,5 +19,4 @@
                      (T last-dir))))
     (play next-dir rat)
     (setf (movement rat) next-dir)
-    (incf (vx (location rat)) (* dt speed x))
-    (incf (vz (location rat)) (* dt speed y))))
+    (incf (vx (location rat)) (* dt speed x))))
