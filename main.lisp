@@ -20,7 +20,8 @@
 (defmethod setup-scene ((main main) scene)
   (setf *world* scene)
   (enter (make-instance 'background) scene)
-  (enter (make-instance 'rat :name :rat :location (vec 0 -240 1000)) scene)
+  (enter (make-instance 'boulder :name :boulder :location (vec 0 240 1000)) scene)
+  (enter (make-instance 'rat :name :rat :location (vec 0 -220 2000)) scene)
   (enter (make-instance 'sidescroll-camera :name :camera) scene)
   (enter (make-instance 'render-pass) scene))
 
