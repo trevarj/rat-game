@@ -1,7 +1,5 @@
 (in-package #:ratgame)
 
-(define-asset (ratgame rat) sprite-data #p"rat.json")
-
 (define-shader-entity rat (animated-sprite located-entity)
   ((sprite-data :initform (asset 'ratgame 'rat))
    (movement :initform 'front :accessor movement)))

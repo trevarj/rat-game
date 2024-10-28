@@ -4,13 +4,9 @@
 
 (defvar *world*)
 
-(define-pool ratgame)
-
 (define-action-set in-game)
 (define-action move (directional-action in-game))
 (define-action quit-game (in-game))
-
-(define-asset (ratgame background) image #p"background.png")
 
 (define-shader-entity background (textured-entity fullscreen-entity located-entity)
   ((texture :initform (// 'ratgame 'background))
