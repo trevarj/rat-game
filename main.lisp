@@ -7,6 +7,7 @@
 (define-action-set in-game)
 (define-action move (directional-action in-game))
 (define-action quit-game (in-game))
+(define-action restart-game (in-game))
 
 (define-shader-entity background (textured-entity fullscreen-entity located-entity)
   ((texture :initform (// 'ratgame 'background))
@@ -27,6 +28,9 @@
 
 (define-handler (scene quit-game) ()
   (quit *context*))
+
+(define-handler (scene restart-game) ()
+  (maybe-reload-scene))
 
 (defun launch (&rest args)
   (let ((*package* #.*package*))

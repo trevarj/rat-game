@@ -3,3 +3,6 @@
 
 (trigger quit-game
          (key :one-of (:q :esc :escape)))
+
+(trigger restart-game
+         (key :one-of (:f2)))
