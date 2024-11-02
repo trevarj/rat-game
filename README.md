@@ -4,8 +4,12 @@
 ![gif](./rat-game.gif)
 
 ### Controls 
-w - left
-d - right
+| Key | Control |
+|-----|---------|
+| w   | left    |
+| d   | right   |
+| F2  | restart |
+| q   | quit    |
 
 ## Run
 
@@ -32,4 +36,8 @@ sbcl --dynamic-memory-size 4Gb
 ```lisp
 (ql:quickload "rat-game")
 (asdf:make "rat-game")
+```
+
+```sh
+tar --create -f rat-game.tar.gz --transform s/bin/rat-game/ bin/ 
 ```
