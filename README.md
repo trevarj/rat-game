@@ -14,7 +14,7 @@
 ## Run
 
 ### From Release
-1. Unzip rat-game.zip
+1. Unzip rat-game.tar.gz: `tar xf rat-game.tar.gz && cd rat-game`
 2. Run executable: `./rat-game-linux.run`
 
 ### From Source
