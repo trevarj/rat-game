@@ -6,7 +6,7 @@
 ### Controls 
 | Key | Control |
 |-----|---------|
-| w   | left    |
+| a   | left    |
 | d   | right   |
 | F2  | restart |
 | q   | quit    |
